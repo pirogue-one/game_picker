@@ -1,0 +1,138 @@
+* {
+    font-family: "Wix Madefor Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url('./images/bg-index.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: fixed; */
+    /* background: fixed url("./images/logo-image.png") center no-repeat cover; */
+
+}
+
+.header,
+.main,
+.footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 2.5rem;
+    background:transparent;
+}
+
+/*----------HEADER-----------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    width: 40px;
+    transform: translateY(-3px);
+}
+
+h2.logo-text {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;  
+}
+
+.menu-item {
+    list-style-type: none;
+}
+
+.menu-item:first-child {
+    text-decoration: underline;
+}
+
+/*----------HEADER ENDS---------*/
+/*----------MAIN SECTION--------*/
+.main {
+    height: calc(100% - 152px);
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.75rem;
+    height: 100%;
+}
+
+.title {
+    font-size: 3rem;
+    line-height: 120%;
+    font-weight: 800;
+    width: 60%;
+}
+
+.start {
+    background-color: #651FBE;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding: 1rem 4.375rem;
+    transition: all 0.4s;
+}
+
+.start:hover {
+    cursor: pointer;
+    background-color: #4E1596;
+}
+
+/*----------MAIN SECTION ENDS-----*/
+/*----------FOOTER----------------*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0.625rem;
+}
+
+.footer-info {
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.footer-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-info-img {
+    width: 20px;
+}
