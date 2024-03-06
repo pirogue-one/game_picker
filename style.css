@@ -146,3 +146,89 @@ h2.logo-text {
 .footer-info-img {
     width: 20px;
 }
+
+
+/*---------CARD PAGE--------*/
+.card {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    padding: 1.25rem;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36, 36, 36, 0.8);
+    border-radius: 20px;
+}
+
+.card__left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.card__img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.card__btn {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    background-color: #212121;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.card__btn:hover {
+    background-color: #651FBE;
+}
+
+.card__link {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.card__right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card__name {
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.card__descr {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card__properties {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.card__prop {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
