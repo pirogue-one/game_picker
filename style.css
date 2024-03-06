@@ -20,8 +20,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background: fixed; */
-    /* background: fixed url("./images/logo-image.png") center no-repeat cover; */
+    background-attachment: fixed;
 
 }
 
