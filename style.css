@@ -296,7 +296,7 @@ input[type="radio"]:checked::before {
 
 .swiper {
     width: 100%;
-    height: calc(100% - 152px);
+    height: 100%;
 }
 
 .swiper-slide {
@@ -317,14 +317,8 @@ input[type="radio"]:checked::before {
 .swiper-button-prev {
     color: #ffffff !important;
     transform: rotate(-90deg);
-    top: var(--swiper-navigation-top-offset,90%) !important;
+    top: var(--swiper-navigation-top-offset, 90%) !important;
     left: 50% !important;
     bottom: 6% !important;
 
-}
-
-.swiper-answer {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
 }
