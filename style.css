@@ -243,12 +243,14 @@ h2.logo-text {
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 1.875rem;
+    text-align: center;
 }
 
 .answers__content {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem 2.5rem;
+    justify-content: center;
 }
 
 .answer__descr {
@@ -276,6 +278,7 @@ input[type="radio"] {
     border-radius: 100%;
     vertical-align: text-bottom;
     position: relative;
+    cursor: pointer;
 }
 
 input[type="radio"]::before {
@@ -307,18 +310,25 @@ input[type="radio"]:checked::before {
     gap: 2.188rem;
 }
 
-.swiper-button-next {
+div.swiper-button-next {
     color: #ffffff !important;
-    transform: rotate(-90deg);
-    top: 6% !important;
+    transform: rotate(90deg);
+    bottom: 15% !important;
     left: 50% !important;
+    top: inherit;
 }
 
 .swiper-button-prev {
     color: #ffffff !important;
-    transform: rotate(-90deg);
-    top: var(--swiper-navigation-top-offset, 90%) !important;
+    transform: rotate(90deg);
     left: 50% !important;
-    bottom: 6% !important;
+    top: 15% !important;
+}
 
+.swiper-pagination-bullet {
+    margin: 8px 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffffff !important;
 }

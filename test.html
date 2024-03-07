@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./script.js"></script>
 </head>
 
 <body>
@@ -32,8 +33,8 @@
             <div class="swiper swiper-answer">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <h2 class="question__name" id="head">Какие жанры игры вы предпочитаете?</h2>
-                        <!-- <div class="answers__content" id="buttons">
+                        <h2 class="question__name" id="head">Какой жанр игры вам более всего нравится? </h2>
+                        <div class="answers__content" id="buttons">
                             <div class="answers__content-radio">
                                 <input class="answer" type="radio" name="a1" value="0">
                                 <label class="answer__descr">RPG</label>
@@ -43,7 +44,7 @@
                                 <label class="card__descr">Shooter</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a1" value="0" checked>
+                                <input class="answer" type="radio" name="a1" value="0">
                                 <label class="card__descr">Action-adventure</label>
                             </div>
                             <div class="answers__content-radio">
@@ -86,11 +87,11 @@
                                 <input class="answer" type="radio" name="a1" value="0">
                                 <label class="card__descr">Simulation</label>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <div class="swiper-slide">
                         <h2 class="question__name" id="head">Какой Ваш возраст?</h2>
-                        <!-- <div class="answers__content" id="buttons">
+                        <div class="answers__content" id="buttons">
                             <div class="answers__content-radio">
                                 <input class="answer" type="radio" name="a2" value="0">
                                 <label class="answer__descr">меньше 18</label>
@@ -99,12 +100,227 @@
                                 <input class="answer" type="radio" name="a2" value="0">
                                 <label class="card__descr"> старше 18</label>
                             </div>
-                        </div> -->
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">На какой платформе вы планируете играть?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a3" value="0">
+                                <label class="answer__descr">ПК</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a3" value="0">
+                                <label class="card__descr">консоль</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a3" value="0">
+                                <label class="card__descr">мобильное устройство</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Какой бюджет вы готовы выделить на покупку игры?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a4" value="0">
+                                <label class="answer__descr">0-1000 рублей</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a4" value="0">
+                                <label class="card__descr">1000-3000 рублей</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a4" value="0">
+                                <label class="card__descr">3000-5000 рублей</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a4" value="0">
+                                <label class="card__descr">Неограниченно</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Просматриваете ли вы рецензии и отзывы других игроков перед
+                            покупкой игры?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a5" value="0">
+                                <label class="answer__descr">да</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a5" value="0">
+                                <label class="card__descr">нет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Хотели бы вы играть в игру с высоким уровнем сложности или
+                            предпочитаете более простые игры?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a6" value="0">
+                                <label class="answer__descr">Легкий уровень</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a6" value="0">
+                                <label class="card__descr">Средний уровень</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a6" value="0">
+                                <label class="card__descr">Сложный уровень</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Желаете ли вы играть в игру с относительно коротким сюжетом
+                            или более продолжительной игровой кампанией?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a7" value="0">
+                                <label class="answer__descr">до 3 часов</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a7" value="0">
+                                <label class="card__descr">до 10 часов</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a7" value="0">
+                                <label class="card__descr">до 18 часов</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a7" value="0">
+                                <label class="card__descr">от 18 часов и выше</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Что вам больше всего нравится в играх:</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a8" value="0">
+                                <label class="answer__descr">сюжет</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a8" value="0">
+                                <label class="card__descr">графика</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a8" value="0">
+                                <label class="card__descr">геймплей</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a8" value="0">
+                                <label class="card__descr">многопользовательские игры</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Что вам больше всего нравится в играх:</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a8" value="0">
+                                <label class="answer__descr">сюжет</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a8" value="0">
+                                <label class="card__descr">графика</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a8" value="0">
+                                <label class="card__descr">геймплей</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a8" value="0">
+                                <label class="card__descr">многопользовательские игры</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Играете ли вы в многопользовательские игры или
+                            предпочитаете одиночные приключения?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a9" value="0">
+                                <label class="answer__descr">многопользовательские игры</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a9" value="0">
+                                <label class="card__descr">одиночные приключения</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Желаете ли вы играть в игру, основанную на реальных
+                            событиях или предпочитаете фантастические миры и существ?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a10" value="0">
+                                <label class="answer__descr">на реальных событиях</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a10" value="0">
+                                <label class="card__descr">фантастические миры</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Хотели бы Вы играть по сети?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a11" value="0">
+                                <label class="answer__descr">да</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a11" value="0">
+                                <label class="card__descr">нет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Есть ли у Вас ограничения компьютера по мощности?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a12" value="0">
+                                <label class="answer__descr">да</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a12" value="0">
+                                <label class="card__descr">нет</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Какие игры Вы предпочитаете?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a13" value="0">
+                                <label class="answer__descr">новые</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a13" value="0">
+                                <label class="card__descr">старые</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2 class="question__name" id="head">Хотели бы вы играть в игру с мультиплеером или предпочитаете одиночные игры?</h2>
+                        <div class="answers__content" id="buttons">
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a14" value="0">
+                                <label class="answer__descr">мультиплеер</label>
+                            </div>
+                            <div class="answers__content-radio">
+                                <input class="answer" type="radio" name="a14" value="0">
+                                <label class="card__descr">одиночные</label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
             </div>
         </section>
     </main>
@@ -116,7 +332,6 @@
             <a class="footer-info" href="mailto:danilabelkov1406@icloud.com">danilabelkov1406@icloud.com</a>
         </div>
     </footer>
-    <script defer href="./script.js"></script>
 </body>
 
 </html>
