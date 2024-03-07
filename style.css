@@ -332,3 +332,25 @@ div.swiper-button-next {
 .swiper-pagination-bullet-active {
     background: #ffffff !important;
 }
+
+/*---------GAMES PAGE--------*/
+
+.number-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.number-list_text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: #f2b741;
+}
+
+.number-list_link:hover {
+    cursor: pointer;
+    color: #f2b741;
+}
+
