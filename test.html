@@ -16,7 +16,7 @@
     <script defer src="./script.js"></script>
 </head>
 
-<body>
+<body class="bg-blur">
     <header class="header">
         <div class="logo">
             <img src="./images/logo-image.png" alt="Лого" class="logo-img">
@@ -31,9 +31,10 @@
     <main class="main">
         <section class="main-section main-section-test">
             <div class="swiper swiper-answer">
-                <div class="swiper-wrapper">
+                <form class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <h2 class="question__name">Какой жанр игры вам более всего нравится? (не более 3-х вариатов)</h2>
+                        <h2 class="question__name">Какой жанр игры вам более всего нравится? (не более 3-х вариатов)
+                        </h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
                                 <input class="answer limited-checkbox-1" type="checkbox" name="genre" value="RPG">
@@ -44,7 +45,8 @@
                                 <label class="card__descr">Шутер</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre" value="Action-adventure">
+                                <input class="answer limited-checkbox-1" type="checkbox" name="genre"
+                                    value="Action-adventure">
                                 <label class="card__descr">Приключенческий боевик</label>
                             </div>
                             <div class="answers__content-radio">
@@ -64,7 +66,8 @@
                                 <label class="card__descr">Стелс</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre" value="Platformer">
+                                <input class="answer limited-checkbox-1" type="checkbox" name="genre"
+                                    value="Platformer">
                                 <label class="card__descr">Платформер</label>
                             </div>
                             <div class="answers__content-radio">
@@ -84,7 +87,8 @@
                                 <label class="card__descr">Спортивные игры</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre" value="Simulation">
+                                <input class="answer limited-checkbox-1" type="checkbox" name="genre"
+                                    value="Simulation">
                                 <label class="card__descr">Симулятор</label>
                             </div>
                         </div>
@@ -110,7 +114,8 @@
                                 <label class="answer__descr">ПК</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-2" type="checkbox" name="playstation" value="true">
+                                <input class="answer limited-checkbox-2" type="checkbox" name="playstation"
+                                    value="true">
                                 <label class="card__descr">PlayStation</label>
                             </div>
                             <div class="answers__content-radio">
@@ -354,7 +359,8 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <h2 class="question__name">Важна ли Вам высококачественная графика и реалистичный звук в игре?</h2>
+                        <h2 class="question__name">Важна ли Вам высококачественная графика и реалистичный звук в игре?
+                        </h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
                                 <input class="answer" type="radio" name="a19" value="0">
@@ -364,7 +370,7 @@
                                 <input class="answer" type="radio" name="a19" value="0">
                                 <label class="card__descr">нет</label>
                             </div>
-                        </div> 
+                        </div>
                     </div>
                     <div class="swiper-slide">
                         <h2 class="question__name">Что вам важнее:</h2>
@@ -385,7 +391,10 @@
                             <input type="text" placeholder="Я играл в...">
                         </div>
                     </div>
-                </div>
+                    <div class="swiper-slide">
+                        <button class="btn">Отправить</button>
+                    </div>
+                </form>
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>

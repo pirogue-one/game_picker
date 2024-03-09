@@ -26,6 +26,10 @@ body {
 
 }
 
+.bg-blur {
+    background-image: url('./images/bg-other-pages.png');
+}
+
 .header,
 .main,
 .footer {
@@ -354,3 +358,13 @@ div.swiper-button-next {
     color: #f2b741;
 }
 
+.btn {
+    background-color: #9A4Aff;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border: 0.1rem #f2b741 solid; /* или так #651fbe */
+    border-radius: 10px;
+    cursor: pointer;
+}
