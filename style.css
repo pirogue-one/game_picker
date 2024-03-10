@@ -81,11 +81,26 @@ h2.logo-text {
     gap: 1.25rem;
 }
 
-.menu-item {
+li.menu-item {
     list-style-type: none;
+    transition: all 0.4s;
 }
 
-.menu-item:first-child {
+a.menu-item__link,
+a.footer-info {
+    transition: all 0.4s;
+}
+
+a.menu-item__link:hover,
+a.footer-info:hover {
+    color: #f2b741 !important;
+}
+
+li.menu-item:hover {
+    color: #f2b741 !important;
+}
+
+.menu-item_underlined {
     text-decoration: underline;
 }
 
@@ -154,6 +169,32 @@ h2.logo-text {
 
 
 /*---------CARD PAGE--------*/
+.main-section-card {
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.75rem;
+    height: 100%;
+}
+
+.main-section-card::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.main-section-card::-webkit-scrollbar-track {
+    background: rgba(33, 33, 33, 0.6);
+    border-radius: 20px;
+}
+
+/* Handle */
+.main-section-card::-webkit-scrollbar-thumb {
+    background: rgba(101, 31, 190, 0.6);
+    border-radius: 20px;
+}
+
 .card {
     margin: 0 auto;
     width: 60%;
@@ -162,7 +203,7 @@ h2.logo-text {
     gap: 1.25rem;
     align-items: center;
     justify-content: center;
-    background-color: rgba(36, 36, 36, 0.8);
+    background-color: rgba(36, 36, 36, 0.6);
     border-radius: 20px;
 }
 
@@ -235,6 +276,11 @@ h2.logo-text {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap: 2rem;
+}
+
+.card__prop-value {
+    text-align: right;
 }
 
 /*---------TEST PAGE--------*/
@@ -352,6 +398,10 @@ div.swiper-button-next {
     font-weight: 400;
     cursor: pointer;
     color: #f2b741;
+}
+
+.number-list_link {
+    transition: all 0.4s;
 }
 
 .number-list_link:hover {

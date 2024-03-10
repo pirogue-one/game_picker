@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <script defer href="./script.js"></script>
+    <script defer type="text/javascript" src="./cards.js"></script>
 </head>
 
 <body class="bg-blur">
@@ -22,12 +22,12 @@
             <a href="./index.html" class="link-home"></a>
         </div>
         <ul class="menu">
-            <li class="menu-item"><a href="./test.html" class="menu-item__link">Подобрать игру</a></li>
+            <li class="menu-item menu-item_underlined"><a href="./test.html" class="menu-item__link">Подобрать игру</a></li>
             <li class="menu-item"><a href="./games.html" class="menu-item__link">Список игр</a></li>
         </ul>
     </header>
     <main class="main">
-        <section class="main-section">
+        <section class="main-section-card">
             <div class="card">
                 <div class="card__left-side">
                     <img src="./images/ведьмак.jpg" alt="Обложка игры" class="card__img">
@@ -43,15 +43,19 @@
                     <div class="card__properties">
                         <div class="card__prop">
                             <p class="card__prop-name">Жанр:</p>
-                            <p class="card__prop-value">Action/RPG</p>
+                            <p class="card__prop-value card__prop-genre">Action/RPG</p>
                         </div>
                         <div class="card__prop">
                             <p class="card__prop-name">Платформа:</p>
-                            <p class="card__prop-value">ПК, консоль</p>
+                            <p class="card__prop-value card__prop-platform">ПК, консоль</p>
                         </div>
                         <div class="card__prop">
                             <p class="card__prop-name">Режим игры:</p>
-                            <p class="card__prop-value">Single</p>
+                            <p class="card__prop-value card__prop-mode">Single</p>
+                        </div>
+                        <div class="card__prop">
+                            <p class="card__prop-name">Стоимость:</p>
+                            <p class="card__prop-value card__prop-price">0</p>
                         </div>
                     </div>
                 </div>

@@ -47,7 +47,7 @@ function selectiveCheckTwo(event) {
 
 //форма
 const games = JSON.parse(gamesJson);
-console.log(games);
+// console.log(games);
 const form = document.querySelector('form');
 
 form.addEventListener('submit', handleSubmit);
@@ -59,19 +59,24 @@ async function handleSubmit(event) {
   const formAnswers = Object.fromEntries(formData);
   console.log(formAnswers);
 
-  const results = games.filter((g) => checkGame(g, formAnswers));
-  if (results.length === 0) { alert('По Вашим ответам ничего не нашлось :( Попробуйте изменить некоторые ответы.')}
+  let results = games.filter((g) => checkGame(g, formAnswers));
+  if (results.length === 0) {
+    let index = Math.floor(Math.random() * 59);
+    results.push(games[index]);
+  } 
+    window.localStorage.setItem('results', JSON.stringify(results));
+    window.location.href = "./card.html"
 }
 
 
 function checkGame(game, formAnswers) {
   const genres = Array.from(document.querySelectorAll('input[name="genre"]:checked')).map((i) => i.value);
-  
+
   if (!genres.includes(game.genre)) {
     return false;
   }
-
-  if (!formAnswers.adult && game.adult === true) {
+  const isAdult = formAnswers.adult === 'true';
+  if (!isAdult && game.adult === true) {
     return false;
   }
 
@@ -91,7 +96,8 @@ function checkGame(game, formAnswers) {
     return false;
   }
 
-  if (formAnswers.price_range ?? 4 < game.price_range) {
+  const priceRange = +(formAnswers.price_range) ?? 4;
+  if (priceRange < game.price_range) {
     return false;
   }
 
@@ -106,7 +112,8 @@ function checkGame(game, formAnswers) {
   }
 
   if (formAnswers.is_new !== undefined) {
-    return game.is_new === formAnswers.is_new;
+    const isNew = formAnswers.is_new === 'true';
+    return game.is_new === isNew;
   }
 
   return true;

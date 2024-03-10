@@ -690,7 +690,7 @@
     "additional_info": "Red Barrels\nPlayStation 4, Xbox One, PC, Xbox Series X/S, PlayStation 5",
     "release_date": "2013-09-03T20:00:00.000Z",
     "is_new": false,
-    "adult": false,
+    "adult": true,
     "genre": "Horror",
     "singleplayer": true,
     "multiplayer": false,
