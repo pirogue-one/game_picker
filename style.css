@@ -111,7 +111,7 @@ h2.logo-text {
     width: 60%;
 }
 
-.start {
+.btn {
     background-color: #651FBE;
     border: none;
     border-radius: 7px;
@@ -121,7 +121,7 @@ h2.logo-text {
     transition: all 0.4s;
 }
 
-.start:hover {
+.btn:hover {
     cursor: pointer;
     background-color: #4E1596;
 }
@@ -251,6 +251,7 @@ h2.logo-text {
 }
 
 .answers__content {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem 2.5rem;
@@ -358,13 +359,12 @@ div.swiper-button-next {
     color: #f2b741;
 }
 
-.btn {
-    background-color: #9A4Aff;
-    color: #ffffff;
+.input-text {
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    padding: 1rem;
+    width: 60%;
     font-size: 1rem;
-    font-weight: 500;
-    padding: 1rem 2rem;
-    border: 0.1rem #f2b741 solid; /* или так #651fbe */
-    border-radius: 10px;
-    cursor: pointer;
+    color: #000000;
 }
