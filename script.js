@@ -114,14 +114,16 @@ function checkGame(game, formAnswers) {
     }
   } 
   
-  if (formAnswers.is_new !== undefined) {
-    const isNew = formAnswers.is_new === 'true';
-    return game.is_new === isNew;
+  if (formAnswers.is_new === 'true') {
+    if (game.is_new === false) {
+      return false;
+    }
   }
   
-  if (formAnswers.fantasy !== undefined) {
-    const isNew = formAnswers.fantasy === 'true';
-    return game.fantasy === isNew;
+  if (formAnswers.fantasy === 'true') {
+    if (game.fantasy === false) {
+      return false;
+    }
   }
 
   return true;
