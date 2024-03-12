@@ -97,6 +97,10 @@ function checkGame(game, formAnswers) {
     return false;
   }
 
+  if (formAnswers.mobile && game.mobile === false) {
+    return false;
+  }
+
   const priceRange = +(formAnswers.price_range) ?? 2;
   if (priceRange < game.price_range) {
     return false;
