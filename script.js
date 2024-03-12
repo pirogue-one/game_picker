@@ -119,8 +119,9 @@ function checkGame(game, formAnswers) {
     return game.is_new === isNew;
   }
   
-  if (formAnswers.fantasy && game.fantasy === false) {
-    return false;
+  if (formAnswers.fantasy !== undefined) {
+    const isNew = formAnswers.fantasy === 'true';
+    return game.fantasy === isNew;
   }
 
   return true;
