@@ -61,8 +61,9 @@ async function handleSubmit(event) {
 
   let results = games.filter((g) => checkGame(g, formAnswers));
   if (results.length === 0) {
-    let index = Math.floor(Math.random() * 59);
-    results.push(games[index]);
+    alert('В нашей базе нет игры с такими парамертами:( Попрбуйте поменять некоторые ответы.')
+    // let index = Math.floor(Math.random() * 59);
+    // results.push(games[index]);
   } 
     window.localStorage.setItem('results', JSON.stringify(results));
     window.location.href = "./card.html"
@@ -96,7 +97,7 @@ function checkGame(game, formAnswers) {
     return false;
   }
 
-  const priceRange = +(formAnswers.price_range) ?? 4;
+  const priceRange = +(formAnswers.price_range) ?? 2;
   if (priceRange < game.price_range) {
     return false;
   }
@@ -109,6 +110,10 @@ function checkGame(game, formAnswers) {
     if (game.singleplayer === false) {
       return false;
     }
+  }
+
+  if (formAnswers.fantasy && game.fantasy === false) {
+    return false;
   }
 
   if (formAnswers.is_new !== undefined) {
