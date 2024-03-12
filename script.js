@@ -6,10 +6,10 @@ const swiper = new Swiper('.swiper-answer', {
 
   direction: 'vertical',
   mousewheel: {
-    enabled: true,
+    enabled: false,
     thresholdDelta: 20
   },
-  loop: true,
+  // loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -52,12 +52,125 @@ const form = document.querySelector('form');
 
 form.addEventListener('submit', handleSubmit);
 
-async function handleSubmit(event) {
+function handleSubmit(event) {
   event.preventDefault();
 
   const formData = new FormData(event.target);
   const formAnswers = Object.fromEntries(formData);
-  console.log(formAnswers);
+  if (!formAnswers.genre) {
+    swiper.slideToLoop(0);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.adult) {
+    swiper.slideTo(1);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.pc && !formAnswers.playstation && !formAnswers.xbox && !formAnswers.switch && !formAnswers.mobile) {
+    swiper.slideTo(2);
+   showModal();
+    return;
+  }
+
+  if (!formAnswers.price_range) {
+    swiper.slideTo(3);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.singleplayer) {
+    swiper.slideTo(4);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.multiplayer) {
+    swiper.slideTo(5);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.is_new) {
+    swiper.slideTo(6);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.fantasy) {
+    swiper.slideTo(7);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a5) {
+    swiper.slideTo(8);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a6) {
+    swiper.slideTo(9);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a7) {
+    swiper.slideTo(10);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a8) {
+    swiper.slideTo(11);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a12) {
+    swiper.slideTo(12);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a15) {
+    swiper.slideTo(13);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a16) {
+    swiper.slideTo(14);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a17) {
+    swiper.slideTo(15);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a18) {
+    swiper.slideTo(16);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a19) {
+    swiper.slideTo(17);
+    showModal();
+    return;
+  }
+
+  if (!formAnswers.a20) {
+    swiper.slideTo(18);
+    showModal();
+    return;
+  }
+
 
   let results = games.filter((g) => checkGame(g, formAnswers));
   // if (results.length === 0) {
@@ -131,4 +244,16 @@ function checkGame(game, formAnswers) {
   }
 
   return true;
+}
+
+const modalWindow = document.querySelector('.modal-window');
+const modalBtn = modalWindow.querySelector('.btn');
+modalBtn.addEventListener('click', hideModal);
+
+function showModal() {
+  modalWindow.classList.remove('hidden');
+}
+
+function hideModal() {
+  modalWindow.classList.add('hidden');
 }

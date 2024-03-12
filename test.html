@@ -130,7 +130,7 @@
                                 <label class="answer__descr">да</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="multiplayer" value="false">
+                                <input class="answer" type="radio" name="singleplayer" value="false">
                                 <label class="card__descr">нет</label>
                             </div>
                         </div>
@@ -344,7 +344,7 @@
                     <div class="swiper-slide">
                         <h2 class="question__name">В какие игры вы уже играли и какие вам понравились больше всего?</h2>
                         <div class="answers__content">
-                            <input class="input-text" type="text" placeholder="Я играл в...">
+                            <input class="input-text" type="text" name='text' placeholder="Я играл в...">
                         </div>
                         <button class="btn">Отправить</button>
                     </div>
@@ -364,6 +364,10 @@
             <a class="footer-info" href="mailto:danilabelkov1406@icloud.com">danilabelkov1406@icloud.com</a>
         </div>
     </footer>
+    <div class="modal-window hidden">
+        <p class="answer">Вы ответили не на все вопросы</p>
+        <button class="btn">ОК</button>
+    </div>
 </body>
 
 </html>
