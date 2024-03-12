@@ -6,7 +6,7 @@ const swiper = new Swiper('.swiper-answer', {
 
   direction: 'vertical',
   mousewheel: {
-    enabled: false,
+    enabled: true,
     thresholdDelta: 20
   },
   // loop: true,
