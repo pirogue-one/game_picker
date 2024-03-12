@@ -60,11 +60,11 @@ async function handleSubmit(event) {
   console.log(formAnswers);
 
   let results = games.filter((g) => checkGame(g, formAnswers));
-  if (results.length === 0) {
-    alert('В нашей базе нет игры с такими парамертами:( Попрбуйте поменять некоторые ответы.')
-    // let index = Math.floor(Math.random() * 59);
-    // results.push(games[index]);
-  } 
+  // if (results.length === 0) {
+  //   alert('В нашей базе нет игры с такими парамертами:( Попрбуйте поменять некоторые ответы.')
+  //   let index = Math.floor(Math.random() * 59);
+  //   results.push(games[index]);
+  // } 
     window.localStorage.setItem('results', JSON.stringify(results));
     window.location.href = "./card.html"
 }
@@ -101,24 +101,26 @@ function checkGame(game, formAnswers) {
   if (priceRange < game.price_range) {
     return false;
   }
-
-  if (formAnswers.multiplayer) {
-    if (game.multiplayer === false) {
-      return false;
-    }
-  } else {
+  
+  if (formAnswers.singleplayer === 'true')  {
     if (game.singleplayer === false) {
       return false;
     }
   }
 
-  if (formAnswers.fantasy && game.fantasy === false) {
-    return false;
-  }
-
+  if (formAnswers.multiplayer === 'true') {
+    if (game.multiplayer === false) {
+      return false;
+    }
+  } 
+  
   if (formAnswers.is_new !== undefined) {
     const isNew = formAnswers.is_new === 'true';
     return game.is_new === isNew;
+  }
+  
+  if (formAnswers.fantasy && game.fantasy === false) {
+    return false;
   }
 
   return true;
