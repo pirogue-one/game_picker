@@ -25,16 +25,6 @@ const swiper = new Swiper('.swiper-answer', {
 
 //ограничение выбора checkbox
 
-// const checks = document.querySelectorAll(".limited-checkbox-1");
-// let max = 3;
-// for (let i = 0; i < checks.length; i++)
-//   checks[i].onclick = selectiveCheck;
-// function selectiveCheck(event) {
-//   let checkedChecks = document.querySelectorAll(".limited-checkbox-1:checked");
-//   if (checkedChecks.length >= max + 1)
-//     return false;
-// }
-
 const checksTwo = document.querySelectorAll(".limited-checkbox-2");
 let maxTwo = 3;
 for (let i = 0; i < checksTwo.length; i++)
@@ -47,16 +37,18 @@ function selectiveCheckTwo(event) {
 
 //форма
 const games = JSON.parse(gamesJson);
-// console.log(games);
 const form = document.querySelector('form');
 
+//поведение формы на кнопку "отправить"
 form.addEventListener('submit', handleSubmit);
 
 function handleSubmit(event) {
   event.preventDefault();
-
+    //нащли все ответы из формы
   const formData = new FormData(event.target);
   const formAnswers = Object.fromEntries(formData);
+
+    //если не выбран ответ - показать модальное окно
   if (!formAnswers.genre) {
     swiper.slideToLoop(0);
     showModal();
@@ -171,18 +163,22 @@ function handleSubmit(event) {
     return;
   }
 
-
+    //записываем в переменную, все игры которые нашлись в результе выполения функции сортировки
   let results = games.filter((g) => checkGame(g, formAnswers));
-  // if (results.length === 0) {
-  //   alert('В нашей базе нет игры с такими парамертами:( Попрбуйте поменять некоторые ответы.')
-  //   let index = Math.floor(Math.random() * 59);
-  //   results.push(games[index]);
-  // } 
+  if (results.length < 2) {
+    let index = Math.floor(Math.random() * 59); //рандомная игра1
+    let index2 = Math.floor(Math.random() * 59); //рандомная игра2
+    results.push(games[index], games[index2]); 
+  } 
+  if (results.length > 3) {
+    shuffleArray(results);
+    results = results.slice(0, 3);
+  }
     window.localStorage.setItem('results', JSON.stringify(results));
     window.location.href = "./card.html"
 }
 
-
+//функция которая сотритует игры в зависимости от ответов
 function checkGame(game, formAnswers) {
   const genres = Array.from(document.querySelectorAll('input[name="genre"]:checked')).map((i) => i.value);
 
@@ -256,4 +252,12 @@ function showModal() {
 
 function hideModal() {
   modalWindow.classList.add('hidden');
+}
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
 }
