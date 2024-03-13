@@ -38,31 +38,31 @@
                         </h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre" value="RPG">
+                                <input id="a1" class="answer limited-checkbox-1" type="checkbox" name="genre" value="RPG">
                                 <label class="answer__descr" for="a1">RPG</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre" value="Shooter">
-                                <label class="card__descr">Шутер</label>
+                                <input id="a2" class="answer limited-checkbox-1" type="checkbox" name="genre" value="Shooter">
+                                <label class="card__descr" for="a2">Шутер</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre"
+                                <input id="a3" class="answer limited-checkbox-1" type="checkbox" name="genre"
                                     value="Action">
-                                <label class="card__descr">Экшн</label>
+                                <label class="card__descr" for="a3">Экшн</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre"
+                                <input id="a4" class="answer limited-checkbox-1" type="checkbox" name="genre"
                                     value="Platformer">
-                                <label class="card__descr">Платформер</label>
+                                <label class="card__descr" for="a4">Платформер</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre" value="Horror">
-                                <label class="card__descr">Хоррор</label>
+                                <input id="a5" class="answer limited-checkbox-1" type="checkbox" name="genre" value="Horror">
+                                <label class="card__descr" for="a5">Хоррор</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-1" type="checkbox" name="genre"
+                                <input id="a6" class="answer limited-checkbox-1" type="checkbox" name="genre"
                                     value="Simulation">
-                                <label class="card__descr">Симулятор</label>
+                                <label class="card__descr" for="a6">Симулятор</label>
                             </div>
                         </div>
                     </div>
@@ -70,12 +70,12 @@
                         <h2 class="question__name">Какой Ваш возраст?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="adult" value="false">
-                                <label class="answer__descr">меньше 18</label>
+                                <input id="age" class="answer" type="radio" name="adult" value="false">
+                                <label for="age" class="answer__descr">меньше 18</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="adult" value="true">
-                                <label class="card__descr"> старше 18</label>
+                                <input id="age18" class="answer" type="radio" name="adult" value="true">
+                                <label for="age18" class="card__descr"> старше 18</label>
                             </div>
                         </div>
                     </div>
@@ -83,25 +83,25 @@
                         <h2 class="question__name">На какой платформе вы планируете играть? (не более 3-х вариатов)</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-2" type="checkbox" name="pc" value="true">
-                                <label class="answer__descr">ПК</label>
+                                <input id="pc" class="answer limited-checkbox-2" type="checkbox" name="pc" value="true">
+                                <label for="pc" class="answer__descr">ПК</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-2" type="checkbox" name="playstation"
+                                <input id="ps" class="answer limited-checkbox-2" type="checkbox" name="playstation"
                                     value="true">
-                                <label class="card__descr">PlayStation</label>
+                                <label for="ps" class="card__descr">PlayStation</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-2" type="checkbox" name="xbox" value="true">
-                                <label class="card__descr">Xbox</label>
+                                <input id="xbox" class="answer limited-checkbox-2" type="checkbox" name="xbox" value="true">
+                                <label for="xbox" class="card__descr">Xbox</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-2" type="checkbox" name="switch" value="true">
-                                <label class="card__descr">Nintendo Switch</label>
+                                <input id="switch" class="answer limited-checkbox-2" type="checkbox" name="switch" value="true">
+                                <label for="switch" class="card__descr">Nintendo Switch</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer limited-checkbox-2" type="checkbox" name="mobile" value="true">
-                                <label class="card__descr">мобильное устройство</label>
+                                <input id="mob" class="answer limited-checkbox-2" type="checkbox" name="mobile" value="true">
+                                <label for="mob" class="card__descr">мобильное устройство</label>
                             </div>
                         </div>
                     </div>
@@ -109,16 +109,16 @@
                         <h2 class="question__name">Какой бюджет вы готовы выделить на покупку игры?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="price_range" value="0">
-                                <label class="answer__descr">играю только в бесплатные игры</label>
+                                <input id="free" class="answer" type="radio" name="price_range" value="0">
+                                <label for="free" class="answer__descr">играю только в бесплатные игры</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="price_range" value="1">
-                                <label class="card__descr">до 4000 рублей</label>
+                                <input id="4000" class="answer" type="radio" name="price_range" value="1">
+                                <label for="4000" class="card__descr">до 4000 рублей</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="price_range" value="2">
-                                <label class="card__descr">Неограниченный бюждет</label>
+                                <input id="price" class="answer" type="radio" name="price_range" value="2">
+                                <label for="price" class="card__descr">Неограниченный бюждет</label>
                             </div>
                         </div>
                     </div>
@@ -126,12 +126,12 @@
                         <h2 class="question__name">Хотели бы вы играть в одиночные игры?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="singleplayer" value="true">
-                                <label class="answer__descr">да</label>
+                                <input id="yes" class="answer" type="radio" name="singleplayer" value="true">
+                                <label for="yes" class="answer__descr">да</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="singleplayer" value="false">
-                                <label class="card__descr">нет</label>
+                                <input id="no" class="answer" type="radio" name="singleplayer" value="false">
+                                <label for="no" class="card__descr">нет</label>
                             </div>
                         </div>
                     </div>
@@ -139,12 +139,12 @@
                         <h2 class="question__name">Хотели бы Вы играть по сети?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="multiplayer" value="true">
-                                <label class="answer__descr">да</label>
+                                <input id="y" class="answer" type="radio" name="multiplayer" value="true">
+                                <label for="y" class="answer__descr">да</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="multiplayer" value="false">
-                                <label class="card__descr">нет</label>
+                                <input id="n" class="answer" type="radio" name="multiplayer" value="false">
+                                <label for="n" class="card__descr">нет</label>
                             </div>
                         </div>
                     </div>
@@ -152,12 +152,12 @@
                         <h2 class="question__name">Какие игры Вы предпочитаете?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="is_new" value="true">
-                                <label class="answer__descr">новые - с 2020 года</label>
+                                <input id="new" class="answer" type="radio" name="is_new" value="true">
+                                <label for="new" class="answer__descr">новые - с 2020 года</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="is_new" value="false">
-                                <label class="card__descr">старые - до 2020 года</label>
+                                <input id="old" class="answer" type="radio" name="is_new" value="false">
+                                <label for="old" class="card__descr">старые - до 2020 года</label>
                             </div>
                         </div>
                     </div>
@@ -165,12 +165,12 @@
                         <h2 class="question__name">Желаете ли вы играть в игру, события которой происходит в реальном мире или предпочитаете фантастические миры и существ?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="fantasy" value="false">
-                                <label class="answer__descr">реальный мир</label>
+                                <input id="real" class="answer" type="radio" name="fantasy" value="false">
+                                <label for="real" class="answer__descr">реальный мир</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="fantasy" value="true">
-                                <label class="card__descr">фантастические миры</label>
+                                <input id="fant" class="answer" type="radio" name="fantasy" value="true">
+                                <label for="fant" class="card__descr">фантастические миры</label>
                             </div>
                         </div>
                     </div>
@@ -179,12 +179,12 @@
                             покупкой игры?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a5" value="0">
-                                <label class="answer__descr">да</label>
+                                <input id="yes-otz" class="answer" type="radio" name="a5" value="0">
+                                <label for="yes-otz" class="answer__descr">да</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a5" value="0">
-                                <label class="card__descr">нет</label>
+                                <input id="no-otz" class="answer" type="radio" name="a5" value="0">
+                                <label for="no-otz" class="card__descr">нет</label>
                             </div>
                         </div>
                     </div>
@@ -193,16 +193,16 @@
                             предпочитаете более простые игры?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a6" value="0">
-                                <label class="answer__descr">Легкий уровень</label>
+                                <input id="light" class="answer" type="radio" name="a6" value="0">
+                                <label for="light" class="answer__descr">Легкий уровень</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a6" value="0">
-                                <label class="card__descr">Средний уровень</label>
+                                <input id="middle" class="answer" type="radio" name="a6" value="0">
+                                <label for="middle" class="card__descr">Средний уровень</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a6" value="0">
-                                <label class="card__descr">Сложный уровень</label>
+                                <input id="high" class="answer" type="radio" name="a6" value="0">
+                                <label for="high" class="card__descr">Сложный уровень</label>
                             </div>
                         </div>
                     </div>
@@ -211,12 +211,12 @@
                             или более продолжительной игровой кампанией?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a7" value="0">
-                                <label class="answer__descr">короткий сюжет</label>
+                                <input id="short" class="answer" type="radio" name="a7" value="0">
+                                <label for="short" class="answer__descr">короткий сюжет</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a7" value="0">
-                                <label class="card__descr">продолжительная кампания</label>
+                                <input id="long" class="answer" type="radio" name="a7" value="0">
+                                <label for="long" class="card__descr">продолжительная кампания</label>
                             </div>
                         </div>
                     </div>
@@ -224,20 +224,20 @@
                         <h2 class="question__name">Что вам больше всего нравится в играх:</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a8" value="0">
-                                <label class="answer__descr">сюжет</label>
+                                <input id="like1" class="answer" type="radio" name="a8" value="0">
+                                <label for="like1" class="answer__descr">сюжет</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a8" value="0">
-                                <label class="card__descr">графика</label>
+                                <input id="like2" class="answer" type="radio" name="a8" value="0">
+                                <label for="like2" class="card__descr">графика</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a8" value="0">
-                                <label class="card__descr">геймплей</label>
+                                <input id="like3" class="answer" type="radio" name="a8" value="0">
+                                <label for="like3" class="card__descr">геймплей</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a8" value="0">
-                                <label class="card__descr">многопользовательские игры</label>
+                                <input id="like4" class="answer" type="radio" name="a8" value="0">
+                                <label for="like4" class="card__descr">многопользовательские игры</label>
                             </div>
                         </div>
                     </div>
@@ -245,12 +245,12 @@
                         <h2 class="question__name">Есть ли у Вас ограничения компьютера по мощности?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a12" value="0">
-                                <label class="answer__descr">да</label>
+                                <input id="comp-yes" class="answer" type="radio" name="a12" value="0">
+                                <label for="comp-yes" class="answer__descr">да</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a12" value="0">
-                                <label class="card__descr">нет</label>
+                                <input id="comp-no" class="answer" type="radio" name="a12" value="0">
+                                <label for="comp-no" class="card__descr">нет</label>
                             </div>
                         </div>
                     </div>
@@ -260,12 +260,12 @@
                             истории?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a15" value="0">
-                                <label class="answer__descr">да</label>
+                                <input id="history-yes" class="answer" type="radio" name="a15" value="0">
+                                <label for="history-yes" class="answer__descr">да</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a15" value="0">
-                                <label class="card__descr">нет</label>
+                                <input id="history-no" class="answer" type="radio" name="a15" value="0">
+                                <label for="history-no" class="card__descr">нет</label>
                             </div>
                         </div>
                     </div>
@@ -274,16 +274,16 @@
                             открытым миром?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a16" value="0">
-                                <label class="answer__descr">город</label>
+                                <input id="city" class="answer" type="radio" name="a16" value="0">
+                                <label for="city" class="answer__descr">город</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a16" value="0">
-                                <label class="card__descr">природа</label>
+                                <input id="nature" class="answer" type="radio" name="a16" value="0">
+                                <label for="nature" class="card__descr">природа</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a16" value="0">
-                                <label class="card__descr">фантастический мир</label>
+                                <input id="fantastic" class="answer" type="radio" name="a16" value="0">
+                                <label for="fantastic" class="card__descr">фантастический мир</label>
                             </div>
                         </div>
                     </div>
@@ -291,12 +291,12 @@
                         <h2 class="question__name">Что вам нравится в играх больше:</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a17" value="0">
-                                <label class="answer__descr">соревнование с другими игроками</label>
+                                <input id="games-people" class="answer" type="radio" name="a17" value="0">
+                                <label for="games-people" class="answer__descr">соревнование с другими игроками</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a17" value="0">
-                                <label class="card__descr">сотрудничество с ними</label>
+                                <input id="friends-people" class="answer" type="radio" name="a17" value="0">
+                                <label for="friends-people" class="card__descr">сотрудничество с ними</label>
                             </div>
                         </div>
                     </div>
@@ -305,12 +305,12 @@
                             результатов?</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a18" value="0">
-                                <label class="answer__descr">да</label>
+                                <input id="res-yes" class="answer" type="radio" name="a18" value="0">
+                                <label for="res-yes" class="answer__descr">да</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a18" value="0">
-                                <label class="card__descr">нет</label>
+                                <input id="res-no" class="answer" type="radio" name="a18" value="0">
+                                <label for="res-no" class="card__descr">нет</label>
                             </div>
                         </div>
                     </div>
@@ -319,12 +319,12 @@
                         </h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a19" value="0">
-                                <label class="answer__descr">да</label>
+                                <input id="real-yes" class="answer" type="radio" name="a19" value="0">
+                                <label for="real-yes" class="answer__descr">да</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a19" value="0">
-                                <label class="card__descr">нет</label>
+                                <input id="real-no" class="answer" type="radio" name="a19" value="0">
+                                <label for="real-no" class="card__descr">нет</label>
                             </div>
                         </div>
                     </div>
@@ -332,12 +332,12 @@
                         <h2 class="question__name">Что вам важнее:</h2>
                         <div class="answers__content">
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a20" value="0">
-                                <label class="answer__descr">реалистичная графика</label>
+                                <input id="real-graphic" class="answer" type="radio" name="a20" value="0">
+                                <label for="real-graphic" class="answer__descr">реалистичная графика</label>
                             </div>
                             <div class="answers__content-radio">
-                                <input class="answer" type="radio" name="a20" value="0">
-                                <label class="card__descr">художественный стиль</label>
+                                <input id="art" class="answer" type="radio" name="a20" value="0">
+                                <label for="art" class="card__descr">художественный стиль</label>
                             </div>
                         </div>
                     </div>
