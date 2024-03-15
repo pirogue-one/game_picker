@@ -22,7 +22,6 @@ cards.forEach((card, index) => {
     const cardGenre = card.querySelector('.card__prop-genre');
     const cardPlatform = card.querySelector('.card__prop-platform');
     const cardMode = card.querySelector('.card__prop-mode');
-    const cardPrice = card.querySelector('.card__prop-price');
 
     const game = results[index];
     cardName.innerHTML = game.name;
@@ -32,7 +31,6 @@ cards.forEach((card, index) => {
     cardGenre.innerHTML = game.genre;
     cardPlatform.innerHTML = getPlatforms(game);
     cardMode.innerHTML = getMode(game);
-    cardPrice.innerHTML = game.price;
 
 })
 
