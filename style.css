@@ -393,7 +393,8 @@ div.swiper-button-next {
 .number-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    list-style-position: inside;
+    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -462,7 +463,6 @@ div.swiper-button-next {
     .number-list {
         gap: 1rem;
         flex-direction: column;
-        padding: 0 0 0 2rem;
     }
 
     .swiper-button-prev {
